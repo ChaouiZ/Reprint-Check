@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Zach Savant" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox</title>
+    <link rel="icon" href="uzlogo.png" />
+  </head>
+  <body>
+    <div class="reprint-check-wrapper">
+      <div class="reprint-check">
+        <p>Is this a reprint?</p>
+        <label class="switch">
+          <input type="checkbox" id="reprint-check-toggle" />
+          <span class="slider"></span>
+        </label>
+        <div class="text-input-wrapper" id="text-input-div">
+          <p>Order Being Reprinted (Order # / Item Id(s))</p>
+          <input type="text" class="text-input" id="text-input-order-num" />
+        </div>
+      </div>
+
+      <div class="reprint-covered-check" id="reprint-covered-check">
+        <p>Is this reprint's cost covered?</p>
+        <label class="switch">
+          <input type="checkbox" id="reprint-covered-check-toggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div
+        class="brian-coupon-check text-input-wrapper"
+        id="brian-coupon-check text-input-div"
+      >
+        <p>BRIAN Coupon Code (If applicable)</p>
+        <input type="text" class="text-input" id="text-input-brian" />
+      </div>
+    </div>
+    <script src="toggle.js"></script>
+  </body>
+</html>
