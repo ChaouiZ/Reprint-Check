@@ -22,7 +22,7 @@ function updateDisplay() {
   }
 }
 
-// console.log(reprintCheck, "\n", reprintCoveredCheckDiv, "\n,", testCheck);
+console.log(reprintCheck, "\n", reprintCoveredCheckDiv, "\n,", testCheck);
 
 reprintCheck.addEventListener("change", updateDisplay);
 window.addEventListener("load", updateDisplay);
