@@ -22,20 +22,45 @@
         </div>
       </div>
 
-      <div class="reprint-covered-check" id="reprint-covered-check">
-        <p>Is this reprint's cost covered?</p>
+      <div class="ups-claim-check" id="ups-claim-check">
+        <p>Is there a UPS claim payment?</p>
         <label class="switch">
-          <input type="checkbox" id="reprint-covered-check-toggle" />
+          <input type="checkbox" id="ups-claim-check-toggle" />
           <span class="slider"></span>
         </label>
+
+        <div class="text-input-wrapper" id="ups-claim-input">
+          <p>Amount:</p>
+          <input
+            type="number"
+            id="reprint-covered-check-toggle"
+            class="text-input"
+          />
+        </div>
       </div>
 
-      <div
-        class="brian-coupon-check text-input-wrapper"
-        id="brian-coupon-check text-input-div"
-      >
-        <p>BRIAN Coupon Code (If applicable)</p>
-        <input type="text" class="text-input" id="text-input-brian" />
+      <div class="brian-coupon-check" id="brian-coupon-check">
+        <div class="brian-coupon-switch-div">
+          <p>Is there a BRIAN Coupon or Refund?</p>
+          <label class="switch">
+            <input type="checkbox" id="brian-resolution-check-toggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div
+          class="brian-coupon-check-input-div text-input-wrapper"
+          id="brian-coupon-check-input-div text-input-div"
+        >
+          <div class="brian-code-input brian-text-input">
+            <p>BRIAN Coupon Code</p>
+            <input type="text" class="text-input" id="text-input-brian" />
+          </div>
+          <div class="brian-refund-input brian-text-input">
+            <p>BRIAN Refund Amount</p>
+            <input type="text" class="text-input" id="text-input-brian" />
+          </div>
+        </div>
       </div>
     </div>
     <script src="toggle.js"></script>

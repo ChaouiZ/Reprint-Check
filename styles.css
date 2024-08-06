@@ -26,12 +26,12 @@ body {
   border: solid black 3px;
   position: absolute;
   left: 37%;
-  top: 30%;
+  top: 10%;
 }
 
 .reprint-check-wrapper,
 .reprint-check,
-.reprint-covered-check {
+.ups-claim-check {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,9 +45,30 @@ body {
   font-size: 1.1rem;
 }
 
-.reprint-covered-check {
+.ups-claim-check {
   display: flex;
+  flex-direction: column;
   margin-bottom: 0.5rem;
+}
+
+.ups-claim-check p {
+  margin-right: 1.5rem;
+}
+
+#ups-claim-input {
+  margin-top: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+#ups-claim-input p {
+  margin-right: 1.5rem;
+}
+
+.brian-coupon-check p {
+  margin-right: 1.5rem;
 }
 
 .switch {
@@ -129,4 +150,40 @@ input:checked + .slider:before {
   border-radius: 5px;
   color: #0e0538;
   text-align: center;
+}
+
+.brian-coupon-switch-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brian-coupon-check-input-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.brian-coupon-check {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.brian-text-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brian-code-input {
+  margin-right: 1.5rem;
+}
+
+.brian-text-input p {
+  margin-right: 0;
 }
